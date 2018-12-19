@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>My FIrst React App</title>
+    <title>My First React App</title>
   </head>
   <body>
      <div id="app"></div>
@@ -14,14 +14,14 @@
          render() {
            return (
            <div>
-            <h1>Hello World</h1>
+            <h1>Hello {this.props.name}!</h1>
            </div>
          );
          }
        }
 
        ReactDOM.render(
-       <Greeting />, document.getElementById('app')
+       <Greeting name="Sean"/>, document.getElementById('app')
      );
      </script>
   </body>
